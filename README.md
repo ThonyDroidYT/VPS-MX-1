@@ -1,4 +1,4 @@
-# VPS-MX By Kalix1 ( MOD NEW-ULTIMATE )
+# VPS-MX By RazhielMod ( MOD NEW-ULTIMATE )
 ```
 UPDATE 19/03/2021
 ```
@@ -47,7 +47,7 @@ BOT MANAGER:
 sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
 
 ```
-VPS-MX Versao 8.4 (las dependencias faltantes se instalarán automáticamente)
+VPS-MX Versión 8.4 (las dependencias faltantes se instalarán automáticamente)
 ```
 -------------------------------------------------------------------------------
 
@@ -77,9 +77,3 @@ https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/Install/Version
 * SIN VIRUS TROJANO (BOTNET) 
 * ARCHIVOS LIBERADOS (DECENCRIPTADOS)
 ```
-
-```
-☆ https://t.me/admmanagerfree ☆
-```
-
-**By: [  ⃘⃤꙰✰ ]**
