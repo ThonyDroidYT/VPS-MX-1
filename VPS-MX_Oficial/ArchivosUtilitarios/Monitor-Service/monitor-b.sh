@@ -43,7 +43,7 @@ echo "
   <link rel='stylesheet' href='estilos.css'>
 </head>
 <body>
-<h1>Monitor de Servicios By @Kalix1</h1>
+<h1>Monitor de Servicios By @Razhiel</h1>
 <p id='ultact'>Última actualización: $FECHA</p>
 <hr>
 " > $DIR/$ARCHIVO
