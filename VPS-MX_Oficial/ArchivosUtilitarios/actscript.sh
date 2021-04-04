@@ -31,11 +31,11 @@ MIP2=$(wget -qO- ipv4.icanhazip.com)
 function_verify () {
   permited=$(curl -sSL "www.dropbox.com/s/i6z1ab3it6src9h/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
-  echo -e "\n\n\n\033[1;95m==============================================================\n ¡ESTA KEY NO CONCUERDA CON EL INSTALADOR!,CONATACTE A @Kalix1\n==============================================================\n"
+  echo -e "\n\n\n\033[1;95m==============================================================\n ¡ESTA KEY NO CONCUERDA CON EL INSTALADOR!,CONATACTE A @Razhiel\n==============================================================\n"
   [[ -d /etc/newadm ]] && rm -rf /etc/newadm
   exit 1
   } || {
-  echo "OK-OFI-@kalix1" > /usr/bin/lickal &>/dev/null
+  echo "OK-OFI-@Razhiel" > /usr/bin/lickal &>/dev/null
   echo "Sistem" > /usr/share/locale/sistem &>/dev/null
   ### INTALAR VERCION DE SCRIPT
   v1=$(curl -sSL "www.dropbox.com/s/b0esdwzyontf6cf/vercionpanel")
@@ -181,7 +181,7 @@ function_verify
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @Kalix1]"
+   msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @Razhiel]"
    REQUEST=$(ofus "$Key"|cut -d'/' -f2)
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
