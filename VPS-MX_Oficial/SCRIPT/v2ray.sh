@@ -1,5 +1,5 @@
 #!/bin/bash
-#25/01/2021 by @Kalix1
+#25/01/2021 by @Razhiel
 clear
 clear
 SCPdir="/etc/VPS-MX"

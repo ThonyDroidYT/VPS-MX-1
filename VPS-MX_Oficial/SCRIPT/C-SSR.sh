@@ -117,7 +117,7 @@ Set_iptables(){
 		chmod +x /etc/network/if-pre-up.d/iptables
 	fi
 }
-#Leer la informaciÛn de configuraciÛn
+#Leer la informaciÔøΩn de configuraciÔøΩn
 Get_IP(){
 	ip=$(wget -qO- -t1 -T2 ipinfo.io/ip)
 	if [[ -z "${ip}" ]]; then
@@ -346,7 +346,7 @@ View_User_info(){
 	clear 
 	echo -e " Usuario [{user_name}] Informacion de Cuenta:"
 msg -bar
-    echo -e " PANEL VPS-MX By @Kalix1"
+    echo -e " PANEL VPS-MX By @Razhiel"
 	
 	echo -e " IP : ${Green_font_prefix}${ip}${Font_color_suffix}"
 
@@ -776,7 +776,7 @@ Set_config_all(){
 		Set_config_forbid
 	fi
 }
-#Modificar la informaciÛn de configuraciÛn
+#Modificar la informaciÔøΩn de configuraciÔøΩn
 Modify_config_password(){
 	match_edit=$(python mujson_mgr.py -e -p "${ssr_port}" -k "${ssr_password}"|grep -w "edit user ")
 	if [[ -z "${match_edit}" ]]; then
@@ -798,7 +798,7 @@ Modify_config_protocol(){
 	if [[ -z "${match_edit}" ]]; then
 		echo -e "${Error} Fallo la modificacion del protocolo de usuario ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} " && exit 1
 	else
-		echo -e "${Info} Acuerdo de usuario modificacion exito ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} (Nota: la configuracion m·s reciente puede demorar unos 10 segundos)"
+		echo -e "${Info} Acuerdo de usuario modificacion exito ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} (Nota: la configuracion mÔøΩs reciente puede demorar unos 10 segundos)"
 	fi
 }
 Modify_config_obfs(){
@@ -814,7 +814,7 @@ Modify_config_protocol_param(){
 	if [[ -z "${match_edit}" ]]; then
 		echo -e "${Error} Fallo la modificacion del parametro del protocolo del usuario (numero de dispositivos limite) ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} " && exit 1
 	else
-		echo -e "${Info} Parametros de negociaciÛn del usuario (numero de dispositivos limite) modificados correctamente ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} (Nota: puede tomar aproximadamente 10 segundos aplicar la ultima configuracion)"
+		echo -e "${Info} Parametros de negociaciÔøΩn del usuario (numero de dispositivos limite) modificados correctamente ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} (Nota: puede tomar aproximadamente 10 segundos aplicar la ultima configuracion)"
 	fi
 }
 Modify_config_speed_limit_per_con(){
@@ -828,7 +828,7 @@ Modify_config_speed_limit_per_con(){
 Modify_config_speed_limit_per_user(){
 	match_edit=$(python mujson_mgr.py -e -p "${ssr_port}" -S "${ssr_speed_limit_per_user}"|grep -w "edit user ")
 	if [[ -z "${match_edit}" ]]; then
-		echo -e "${Error} Usuario Puerto la modificaciÛn del limite de velocidad total fallo ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} " && exit 1
+		echo -e "${Error} Usuario Puerto la modificaciÔøΩn del limite de velocidad total fallo ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} " && exit 1
 	else
 		echo -e "${Info} Usuario Puerto limite de velocidad total modificado con exito ${Green_font_prefix}[Port: ${ssr_port}]${Font_color_suffix} (Nota: la configuracion mas reciente puede demorar unos 10 segundos)"
 	fi
@@ -902,7 +902,7 @@ Download_SSR(){
 	[[ ! -e ${ssr_folder} ]] && echo -e "${Error} Fallo la descarga del servidor ShadowsocksR!" && exit 1
 	# [[ ! -e "manyuser.zip" ]] && echo -e "${Error} Fallo la descarga del paquete de compresion lateral ShadowsocksR !" && rm -rf manyuser.zip && exit 1
 	# unzip "manyuser.zip"
-	# [[ ! -e "/usr/local/shadowsocksr-manyuser/" ]] && echo -e "${Error} Fallo la descompresiÛn del servidor ShadowsocksR !" && rm -rf manyuser.zip && exit 1
+	# [[ ! -e "/usr/local/shadowsocksr-manyuser/" ]] && echo -e "${Error} Fallo la descompresiÔøΩn del servidor ShadowsocksR !" && rm -rf manyuser.zip && exit 1
 	# mv "/usr/local/shadowsocksr-manyuser/" "/usr/local/shadowsocksr/"
 	# [[ ! -e "/usr/local/shadowsocksr/" ]] && echo -e "${Error} Fallo el cambio de nombre del servidor ShadowsocksR!" && rm -rf manyuser.zip && rm -rf "/usr/local/shadowsocksr-manyuser/" && exit 1
 	# rm -rf manyuser.zip
@@ -1004,7 +1004,7 @@ msg -bar
 }
 Update_SSR(){
 	SSR_installation_status
-	# echo -e "Debido a que el bebÈ roto actualiza el servidor ShadowsocksR, entonces."
+	# echo -e "Debido a que el bebÔøΩ roto actualiza el servidor ShadowsocksR, entonces."
 	cd ${ssr_folder}
 	git pull
 	Restart_SSR
@@ -1088,7 +1088,7 @@ Install_Libsodium(){
 	echo && echo -e "${Info} libsodium exito de instalacion!" && echo
 msg -bar
 }
-#Mostrar informaciÛn de conexiÛn
+#Mostrar informaciÔøΩn de conexiÔøΩn
 debian_View_user_connection_info(){
 	format_1=$1
 	user_info=$(python mujson_mgr.py -l)
@@ -1196,7 +1196,7 @@ get_IP_address(){
 		done
 	fi
 }
-#Modificar la configuraciÛn del usuario
+#Modificar la configuraciÔøΩn del usuario
 Modify_port(){
 msg -bar
 	List_port_user
@@ -1217,7 +1217,7 @@ msg -bar
 Modify_Config(){
 clear
 	SSR_installation_status
-	echo && echo -e "    ###¬øQue desea realizar?###Mod By @Kalix1
+	echo && echo -e "    ###¬øQue desea realizar?###Mod By @Razhiel
 $(msg -bar)
  ${Green_font_prefix}1.${Font_color_suffix}  Agregar y Configurar Usuario
  ${Green_font_prefix}2.${Font_color_suffix}  Eliminar la Configuracion del Usuario
@@ -1505,7 +1505,7 @@ clear
  * * * * * Mes * * * * *
  ${Green_font_prefix} 0 2 1 * * ${Font_color_suffix} Representante 1er, 2:00, claro, trafico usado.
 $(msg -bar)
- ${Green_font_prefix} 0 2 15 * * ${Font_color_suffix} Representativo El 1  2} representa el 15  2:00 minutos Punto de flujo usado despejado 0 minutos Borrar flujo usadoè
+ ${Green_font_prefix} 0 2 15 * * ${Font_color_suffix} Representativo El 1  2} representa el 15  2:00 minutos Punto de flujo usado despejado 0 minutos Borrar flujo usadoÔøΩ
 $(msg -bar)
  ${Green_font_prefix} 0 2 */7 * * ${Font_color_suffix} Representante 7 dias 2: 0 minutos despeja el trafico usado.
 $(msg -bar)
@@ -1823,7 +1823,7 @@ msg -bar
 	fi
 
 }
-#ProhibidoÅBT PT SPAM
+#ProhibidoÔøΩBT PT SPAM
 BanBTPTSPAM(){
 	wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ban_iptables.sh && chmod +x ban_iptables.sh && bash ban_iptables.sh banall
 	rm -rf ban_iptables.sh
@@ -1842,7 +1842,7 @@ msg -bar
 	if [[ ${connect_verbose_info} = "0" ]]; then
 		echo && echo -e "Modo de registro actual: ${Green_font_prefix}Registro de errores en modo simple${Font_color_suffix}"
 msg -bar
-		echo -e "yes para cambiar a ${Green_font_prefix}Modo detallado (registro de conexiÛn + registro de errores)${Font_color_suffix}Ôºü[y/N]"
+		echo -e "yes para cambiar a ${Green_font_prefix}Modo detallado (registro de conexiÔøΩn + registro de errores)${Font_color_suffix}Ôºü[y/N]"
 msg -bar
 		stty erase '^H' && read -p "(Predeterminado: n):" connect_verbose_info_ny
 		[[ -z "${connect_verbose_info_ny}" ]] && connect_verbose_info_ny="n"
@@ -1974,7 +1974,7 @@ msg -bar
 	if [[ -e ${ssr_folder} ]]; then
 		check_pid
 		if [[ ! -z "${PID}" ]]; then
-			echo -e "         VPS-MX By @Kalix1\n Estado actual: ${Green_font_prefix}Instalado${Font_color_suffix} y ${Green_font_prefix}Iniciado${Font_color_suffix}"
+			echo -e "         VPS-MX By @Razhiel\n Estado actual: ${Green_font_prefix}Instalado${Font_color_suffix} y ${Green_font_prefix}Iniciado${Font_color_suffix}"
 		else
 			echo -e " Estado actual: ${Green_font_prefix}Instalado${Font_color_suffix} pero ${Red_font_prefix}no comenzo${Font_color_suffix}"
 		fi

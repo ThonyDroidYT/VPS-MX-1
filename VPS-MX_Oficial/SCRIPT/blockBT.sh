@@ -472,7 +472,7 @@ clear
 clear
 msg -bar
 echo  -e "$(msg -tit) " 
-echo -e "  Panel de Firewall VPS•MX By @Kalix1 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}"
+echo -e "  Panel de Firewall VPS•MX By @Razhiel ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}"
 msg -bar2
 echo -e "  ${Green_font_prefix}0.${Font_color_suffix} Ver la lista actual de prohibidos
 ————————————

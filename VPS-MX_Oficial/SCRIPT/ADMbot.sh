@@ -33,7 +33,7 @@ USRdatacredi="/etc/BOT-C2/creditos"
 clear
 msg -bar
 msg -tit
-msg -ama "      ## BOT DE GESTION | VPS-MX By @Kalix1 ## \033[1;31m"
+msg -ama "      ## BOT DE GESTION | VPS-MX By @Razhiel ## \033[1;31m"
 msg -bar
 if [[ $1 = "id" || -z $(ps aux |grep -v grep |grep -w "ADMbot.sh"|grep dmS|awk '{print $2}') ]]; then
 [[ -z $2 ]] && echo -ne "\033[1;96m #Digite el Token del BOT\033[0;92m\nTOKEN: \033[0;97m" && read TOKEN || TOKEN="$2"

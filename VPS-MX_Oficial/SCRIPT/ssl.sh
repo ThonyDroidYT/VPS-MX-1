@@ -1,5 +1,5 @@
 #!/bin/bash
-#25/01/2021 by @Kalix1
+#25/01/2021 by @Razhiel
 clear
 clear
 SCPdir="/etc/VPS-MX"
@@ -153,7 +153,7 @@ clear
 msg -bar
 msg -bar3
 msg -tit
-echo -e "${cor[3]}       INSTALADOR MONO Y MULTI SSL By @Kalix1"
+echo -e "${cor[3]}       INSTALADOR MONO Y MULTI SSL By @Razhiel"
 msg -bar
 echo -e "${cor[1]}            Escoja la opcion deseada."
 msg -bar

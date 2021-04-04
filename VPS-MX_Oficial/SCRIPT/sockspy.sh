@@ -1,5 +1,5 @@
 #!/bin/bash
-#25/01/2021 by @Kalix1
+#25/01/2021 by @Razhiel
 clear
 clear
 SCPdir="/etc/VPS-MX"
@@ -39,7 +39,7 @@ chmod +x  /usr/sbin/sckt
 rm -rf $HOME/socks
 cd $HOME
 msg="$2"
-[[ $msg = "" ]] && msg="@Kalix1"
+[[ $msg = "" ]] && msg="@Razhiel"
 portxz="$1"
 [[ $portxz = "" ]] && portxz="8080"
 screen -dmS sokz scktcheck "$portxz" "$msg" > /dev/null 2>&1
@@ -378,7 +378,7 @@ pidproxy5=$(ps x | grep "PGet.py" | grep -v "grep" | awk -F "pts" '{print $1}') 
 pidproxy6=$(ps x | grep "scktcheck" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy6 ]] && P6="\033[1;32m[ON]" || P6="\033[1;31m[OFF]"
 msg -bar 
 msg -tit
-msg -ama "   INSTALADOR DE PROXY'S VPS-MX By MOD @Kalix1"
+msg -ama "   INSTALADOR DE PROXY'S VPS-MX By MOD @Razhiel"
 msg -bar
 echo -e "${cor[4]} [1] $(msg -verm2 "==>>") \033[1;97m$(fun_trans  "Proxy Python SIMPLE")\033[1;97m ------------- $P1"
 echo -e "${cor[4]} [2] $(msg -verm2 "==>>") \033[1;97m$(fun_trans  "Proxy Python SEGURO")\033[1;97m ------------- $P2"
