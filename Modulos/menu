@@ -114,7 +114,7 @@ SCPidioma="${SCPdir}/idioma"
 local LINGUAGE=$(cat ${SCPidioma})
 [[ -z $LINGUAGE ]] && LINGUAGE=es
 [[ $LINGUAGE = "es" ]] && echo "$@" && return
-[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/VPS-MX_Oficial/ArchivosUtilitarios/trans &> /dev/null
+[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://www.dropbox.com/s/ryky68szhqhi48e/trans &> /dev/null
 [[ ! -e /etc/VPS-MX/texto-mx ]] && touch /etc/VPS-MX/texto-mx
 source /etc/VPS-MX/texto-mx
 if [[ -z "$(echo ${texto[$@]})" ]]; then
@@ -354,9 +354,10 @@ done <<< "${portasVAR}"
 [[ ! -z $APC ]] && echo -e $APC
 [[ ! -z $OVPN ]] && echo -e $OVPN
 [[ ! -z $BAD ]] && echo -e $BAD
+[[ -e "/etc/wireguard/wg0.conf" ]] && echo -e "\033[1;31m WIREGUARD: \033[1;32m$wgport \033[0m"
 msg -bar2
-
 }
+wgport=$(grep '^ListenPort' /etc/wireguard/wg0.conf | cut -d " " -f 3)
 ofus () {
 unset txtofus
 number=$(expr length $1)
@@ -547,6 +548,8 @@ msg -ama "$(fun_trans "Arquitectura"): ${null}$(uname -m)"
 msg -bar
 return 0
 }
+#Pid Wireguard
+[[ -e "/etc/wireguard/wg0.conf" ]] && wg="\033[1;32m[ON]\033[0m" || wg="\033[1;31m[OFF]\033[0m"
 float_data () {
 valuest=$(ps ax |grep /etc/shadowsocks-r|grep -v grep)
 [[ $valuest != "" ]] && valuest="\033[1;32m[ON]" || valuest="\033[1;31m[OFF]"
@@ -557,7 +560,6 @@ case $1 in
 "ADMbot-VEN.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "=>>") " && msg -azu "BOT-USA1 VENTAS $dev2";;
 
 "openssh.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "OPENSSH $(pid_inst sshd)";;
-
 "squid.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SQUID ---------------------------- $(pid_inst squid)";;
 "dropbear.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "DROPBEAR ------------------------- $(pid_inst dropbear)";;
 "openvpn.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "OPENVPN -------------------------- $(pid_inst openvpn)";;
@@ -567,8 +569,8 @@ case $1 in
 "Shadowsocks-R.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SHADOWSOCKS-R -------------------- ${valuest}";; 
 "sockspy.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SOCKS PYTHON --------------------- $(pid_inst python)";;
 "v2ray.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 "==>>") " && msg -azu "V2RAY ---------------------------- $(pid_inst v2ray)";; 
-"budp.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "BADVPN-(UDP:7300) ---------------- $(pid_inst badvpn)";;
-
+"budp.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 "==>>") " && msg -azu "BADVPN-(UDP:7300) ---------------- $(pid_inst badvpn)";;
+"wireguard.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 "==>>") " && msg -azu "WIREGUARD ------------------------ $wg";;
 "paysnd.sh")return 1;;
 "ultrahost")return 1;;
 "speed.sh")return 1;;
@@ -993,4 +995,4 @@ case ${selection} in
 0)cd $HOME && exit 0;;
 esac
 msg -ne "Enter Para Continuar" && read enter
-${SCPdir}/menu
+${SCPdir}/menunu
