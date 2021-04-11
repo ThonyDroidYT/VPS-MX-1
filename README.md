@@ -3,7 +3,7 @@
 UPDATE 10/04/2021
 ```
 
-![logo](https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/NEW-ULTIMATE-VPS-MX-8.4.png)
+![logo](https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/logo.png)
 
 **Manager Script**
 
