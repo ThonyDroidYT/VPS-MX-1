@@ -1,4 +1,4 @@
-# VPS-MX By RazhielMod ( MOD NEW VPS8.4 )
+# VPS-MX By RazhielMod ( MOD NEW-ULTIMATE )
 ```
 UPDATE 19/03/2021
 ```
@@ -44,7 +44,7 @@ BOT MANAGER:
 
 ## :book: Installation
 
-sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh* 
+sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*
 
 ```
 VPS-MX Versión 8.4 (las dependencias faltantes se instalarán automáticamente)
@@ -70,4 +70,10 @@ https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/Install/Version
 * Repositorios: https://github.com/lacasitamx
 -------------------------------------------------------------------------------
 
+```
+* SIN MINERIA! 
+* SIN KEYS! 
+* VERSION GRATUITA 
+* SIN VIRUS TROJANO (BOTNET) 
+* ARCHIVOS LIBERADOS (DECENCRIPTADOS)
 ```

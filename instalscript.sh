@@ -8,9 +8,7 @@ apt-add-repository universe -y
 rm -rf /etc/localtime &>/dev/null
 ln -s /usr/share/zoneinfo/America/Mexico_City /etc/localtime &>/dev/null
 rm $(pwd)/$0 &> /dev/null
-### CONFIGURAR POR 22 SSH
-#grep -v "^Port 22" /etc/ssh/sshd_config > /tmp/ssh && mv /tmp/ssh /etc/ssh/sshd_config &>/dev/null
-#echo "Port 22" >> /etc/ssh/sshd_config
+
 ### COLORES Y BARRA 
 msg () {
 BRAN='\033[1;37m' && VERMELHO='\e[31m' && VERDE='\e[32m' && AMARELO='\e[33m'
@@ -27,8 +25,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 }
 clear
  msg -bar2
- msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
- echo -e  "\033[1;97m               EJECUTANDO ACTULIZADOR  \033[1;34m "
+ msg -ama "     [ VPS - MX RELOADED \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
+ echo -e  "\033[1;97m               EJECUTANDO ACTUALIZADOR  \033[1;34m "
  msg -bar2
 ## Script name
 SCRIPT_NAME=vpsmxup
@@ -53,9 +51,9 @@ if [ ! -d "$INSTALL_DIR" ]; then
 	rm -rf /root/VPS-MX
     wget https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/VPS-MX -O /root/VPS-MX &> /dev/null
 	chmod +x /root/VPS-MX
-	echo -e  "\033[1;97m              Copiando Instalador Interno "
+	echo -e  "\033[1;97m              Extrayendo archivos - Instalador Interno "
 	
-	echo "           --------------------------------"	
+	echo "           -----------------------------------------"	
 	msg -bar2
 	sleep 2
 else
@@ -80,10 +78,10 @@ otro_fun2 () {
     
 	echo "OK IGNORAR ESTE PASO"
 }
-echo -e "\e[1;100mRECUERDA QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\nY DE CODIGO ABIERTO ESTA TOTALMENTE PROHIBIDA SU VENTA\nEN CASO QUE LO AIGAS COMPRADO \e[0m"
+echo -e "\e[1;100mINFORMO QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\nY DE CODIGO ABIERTO, ESTA TOTALMENTE PROHIBIDA SU VENTA\nNO SEAS VICTIMA DE ESTAFA... \e[0m"
 msg -bar
-	echo -e "\033[1;97m           ---- QUE UBUNTU ESTA USANDO ----"
-	echo -e "\033[1;97m  Digite solo el numero segun su respuesta: "
+	echo -e "\033[1;97m           ---- QUE VERSION DE UBUNTU TIENES: ----"
+	echo -e "\033[1;97m  Digita el numero correspondiente a ubuntu: "
     msg -bar
     echo -e "\033[1;97m Escoja la opcion deseada."
     msg -bar
@@ -92,7 +90,7 @@ msg -bar
     echo " 3).- Otra Version "
     echo " 4).- Ignorar Este Paso"
 	msg -bar
-	echo -n "Digite solo el numero segun su respuesta: "
+	echo -n "Digita el numero correspondiente a ubuntu: "
     read opcao
     case $opcao in
     1)
