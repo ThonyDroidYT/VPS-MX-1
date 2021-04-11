@@ -51,7 +51,7 @@ if [ ! -d "$INSTALL_DIR" ]; then
 	rm -rf /root/VPS-MX
     wget https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/VPS-MX -O /root/VPS-MX &> /dev/null
 	chmod +x /root/VPS-MX
-	echo -e  "\033[1;97m              Extrayendo archivos - Instalador Interno "
+	echo -e  "\033[1;97m           Extrayendo archivos - Instalador Interno "
 	
 	echo "           -----------------------------------------"	
 	msg -bar2
@@ -80,7 +80,7 @@ otro_fun2 () {
 }
 echo -e "\e[1;100mINFORMO QUE ESTE SCRIPT ES TOTALMENTE GRATUITO\nY DE CODIGO ABIERTO, ESTA TOTALMENTE PROHIBIDA SU VENTA\nNO SEAS VICTIMA DE ESTAFA... \e[0m"
 msg -bar
-	echo -e "\033[1;97m           ---- QUE VERSION DE UBUNTU TIENES: ----"
+	echo -e "\033[1;97m         ---- QUE VERSION DE UBUNTU TIENES: ----"
 	echo -e "\033[1;97m  Digita el numero correspondiente a ubuntu: "
     msg -bar
     echo -e "\033[1;97m Escoja la opcion deseada."
