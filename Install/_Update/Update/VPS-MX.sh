@@ -279,8 +279,8 @@ echo 'echo -e "\t\033[91m \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
 echo 'echo -e "\t\033[91m  \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
 echo 'echo -e "\t\033[91m   \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
 echo 'echo -e "\t\033[91m    \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
-echo 'echo -e "\033[92m\t >>>>>>>>>>>>>>>♠♠♠♠♠♠♠♠♠♠♠♠♠♠<<<<<<<<<<<"'>> .bashrc
-echo 'echo -e "\033[92m\t    R  E  L  O  A  D  E  D - By @RAZHIEL"'>> .bashrc
+echo 'echo -e "\033[92m\t >>>>>♠♠♠♠♠♠♠♠♠<<<<<"'>> .bashrc
+echo 'echo -e "\033[92m\t    R E L O A D E D - By @RAZHIEL"'>> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/VPS-MX/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
