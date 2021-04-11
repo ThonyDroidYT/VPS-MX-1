@@ -1,5 +1,5 @@
 #!/bin/bash
-#22/01/2021
+#10/04/2021
 clear
 clear
 sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1 > /dev/null 2>&1
@@ -32,7 +32,7 @@ elif [[ -e /etc/bash.bashrc ]]; then AutoRun="\033[1;31m[OFF]"
 fi
 # Funcoes Globais
 msg () {
-#ACTULIZADOR
+#ACTUALIZADOR
 [[ ! -e /etc/versin_script ]] && echo 1 > /etc/versin_script
 v11=$(cat /etc/versin_script_new) 
 v22=$(cat /etc/versin_script)
@@ -77,7 +77,7 @@ SEMCOR='\e[0m'
   -verd)cor="${COLOR[2]}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${COLOR[0]}${SEMCOR}" && echo -e "${cor}${2}${SEMCOR}";;
   "-bar2"|"-bar")cor="${COLOR[1]}————————————————————————————————————————————————————" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
-  -tit)echo -e "\e[97m \033[1;41m| #-#-► 🐲 SCRIPT VPS•MX ◄-#-# | \033[1;49m\033[1;49m \033[1;31m[ \033[1;32m $vesaoSCT " && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  -tit)echo -e "\e[97m \033[1;41m| #-#-► 🐲 VPS•MX RELOAD◄-#-# | \033[1;49m\033[1;49m \033[1;31m[ \033[1;32m $vesaoSCT " && echo -e "${SEMCOR}${cor}${SEMCOR}";;
   -bar3) $([[ ! -e $(echo -e $(echo "2f7573722f73686172652f6d65646961707472652f6c6f63616c2f6c6f672f6c6f676e756c6c"| sed 's/../\\x&/g;s/$/ /')) ]] && $( aviso_bock > /dev/null 2>&1)) && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
@@ -85,7 +85,7 @@ canbio_color () {
 clear
 msg -bar2
 msg -tit
-msg -ama "     CONTROLADOR DE COLORES DEL SCRIP VPS-MX"
+msg -ama "     CONTROLADOR DE COLORES DE VPS-MX RELOADED"
 msg -bar2
 msg -ama "$(fun_trans "Selecione 7 cores"): "
 echo -e '\033[1;37m [1] ###\033[0m'
@@ -136,7 +136,7 @@ function_verify () {
   exit 1
   } || {
   ### INTALAR VERSION DE SCRIPT
-  v1=$(curl -sSL "https://raw.githubusercontent.com/VPS-MX/VPS-MX_Oficial/master/Version")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/VPS-MX_Oficial/Version")
   echo "$v1" > /etc/versin_script
   }
 }
@@ -179,8 +179,8 @@ clear
 clear
 msg -bar
 msg -tit
-echo -e "\033[1;91m      ACTULIZAR FICHEROS DEL SCRIPT VPS-MX"
-msg -bar2 && msg -ne "\033[1;93m          >>> INTRODUSCA LA KEY ABAJO <<<\n   \033[1;37m" && read Key
+echo -e "\033[1;91m      ACTUALIZAR FICHEROS DEL SCRIPT VPS-MX RELOADED"
+msg -bar2 && msg -ne "\033[1;93m          >>> INTRODUZCA LA KEY ABAJO <<<\n   \033[1;37m" && read Key
 tput cuu1 && tput dl1
 done
 msg -ne "    # Verificando Key # : "
@@ -220,7 +220,7 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "Code de KEY Inva
    echo "$Key" > ${SCPdir}/key.txt
    [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal}   
    [[ ${#id} -gt 2 ]] && echo "es" > ${SCPidioma} || echo "es" > ${SCPidioma}
-   echo -e "${cor[2]}               ACTULIZACION COMPLETA "
+   echo -e "${cor[2]}               ACTUALIZACION COMPLETADA "
    echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
    echo -e "  \033[1;41m               sudo VPS-MX o vps-mx             \033[0;37m" && msg -bar2
 
@@ -491,7 +491,7 @@ msg -bar
 msg -tit
 msg -ama "          ¿ DESEA DESINSTALAR SCRIPT ?"
 msg -bar
-echo -e " Esto borrara todos los archivos del scrip VPS_MX"
+echo -e " Esto borrara todos los archivos de VPS♦MX RELOADED"
 msg -bar
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p " [S/N]: " yesno
@@ -620,7 +620,7 @@ script[$Numb]="apacheon.sh"
 echo -e "\033[1;93m-----------------------SEGURIDAD---------------------"
 #PROTECION
 let Numb++
-echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -azu "FIREWALL PARA VPS VPS•MX            $ofc"
+echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -azu "FIREWALL PARA VPS            $ofc"
 script[$Numb]="blockBT.sh"
 let Numb++
 echo -ne "$(msg -verd "[$Numb]") $(msg -verm2 ">") " && msg -azu "FAIL2BAN PROTECION                  $ofc"
@@ -843,7 +843,7 @@ msg -bar
 read -p "                    [ s | n ]: " monv2ray  
 sed -i "55d" /bin/monitor.sh
 sed -i '55i #EstadoServicio v2ray' /bin/monitor.sh 
-[[ "$monv2ray" = "s" || "$monv2ray" = "S" ]] && monv2ray 
+[[ "$monv2ray" = "s" || "$monv2ray" = "S" ]] && monv2ray
 
 #echo "screen -dmS very3 /etc/VPS-MX/menu monitorservi" >> /bin/resetsshdrop
 cd ${SCPdir}
@@ -926,7 +926,7 @@ msg -bar
 [[ -e ${SCPdir}/message.txt ]] && msg -bra " RESELLER AUTORIZADO: \n\033[1;96m $(cat ${SCPdir}/message.txt) "
 [[ -e ${SCPdir}/key.txt ]] && msg -bra " KEY DE REGISTRO:\n \033[1;93m $(cat ${SCPdir}/key.txt)"
 msg -bar
-echo -ne "\033[1;97m        CAMBIOS DE LA VERSION 8.3\n"
+echo -ne "\033[1;97m        CAMBIOS DE LA VERSION 8.4\n"
 echo -ne " - Compatible con Ubuntu's 14,16,18,20\n"
 echo -ne "        (Server live's ext 0.4)\n"
 echo -ne " - Compatibilidad Ubuntu 20, Squid,Openvpn,Dropbear\n"

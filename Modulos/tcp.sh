@@ -348,7 +348,7 @@ start_menu(){
 clear
 msg -bar
 msg -tit
-echo -e "    TCP Aceleración (BBR/Plus) VPS-MX By @Kalix1\n                         ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
+echo -e "    TCP Aceleración (BBR/Plus) VPS-MX RELOADED By @Razhiel\n                         ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
 $(msg -bar)
  ${Green_font_prefix}0.${Font_color_suffix} Script de actualización
 ————————————Gestión del Núcleo————————————

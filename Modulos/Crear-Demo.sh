@@ -76,7 +76,7 @@ touch /etc/VPS-MX/demo-ssh/$name
 echo "senha: $pass" >> /etc/VPS-MX/demo-ssh/$name
 echo "data: ($tmp)Minutos" >> /etc/VPS-MX/demo-ssh/$name
 msg -bar2
-echo -e "\033[1;93m ¡¡ USUARIO TEMPORAL x MINUTOS (VPS-MX By @Kalix1) !!\033[0m"
+echo -e "\033[1;93m ¡¡ USUARIO TEMPORAL x MINUTOS (VPS-MX RELOADED) !!\033[0m"
 msg -bar2
 echo -e "\033[1;36m  >> IP del Servidor: \033[0m$(meu_ip) " 
 echo -e "\033[1;36m  >> Usuario: \033[0m$name"

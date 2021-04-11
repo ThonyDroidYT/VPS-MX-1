@@ -9,7 +9,7 @@ SCPusr="${SCPdir}/controlador" && [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr}
 SCPfrm="${SCPdir}/herramientas" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPinst="${SCPdir}/protocolos" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 msg -bar
-echo -e "${cor[4]} $(fun_trans "    PRUEBA DE VELOCIDAD DE HOSTING ") [By VPS-MX]"
+echo -e "${cor[4]} $(fun_trans "    PRUEBA DE VELOCIDAD DE HOSTING ") [By @Razhiel]"
 msg -bar
 ping=$(ping -c1 google.com |awk '{print $8 $9}' |grep -v loss |cut -d = -f2 |sed ':a;N;s/\n//g;ta')
 # PROGRESS - BAR

@@ -99,7 +99,7 @@ msg -bar3
 clear
 msg -bar
 msg -tit
-echo -e "\033[1;32m     INSTALADOR DE OPENVPN | VPS-MX By @Kalix1"
+echo -e "\033[1;32m   INSTALADOR DE OPENVPN | VPS-MX RELOADED By @Razhiel"
 msg -bar
 	# OpenVPN setup and first user creation
 echo -e "\033[1;97mSe necesitan ciertos parametros para configurar OpenVPN."

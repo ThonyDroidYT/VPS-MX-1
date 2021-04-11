@@ -190,7 +190,7 @@ local bot_retorno="$LINE\n"
 ativarid_fun () {
 if [[ ! -z $LIBERADOS ]] && [[ $(echo ${LIBERADOS}|grep -w "$3") ]]; then
 local bot_retorno+="$LINE\n"
-          bot_retorno+="- - 🔰 ACESSO DE ADMIN LIBERADO 🔰 - - \n"
+          bot_retorno+="- - 🔰 ACCESO DE ADMIN LIBERADO 🔰 - - \n"
           bot_retorno+="$LINE\n"
           bot_retorno+="✌️ Usted ya Puede usar el Bot\n"
           bot_retorno+="👉 Dele Buen Uso\n"
@@ -203,7 +203,7 @@ return 0
 elif [[ $1 = ${USERLIB} ]] && [[ $2 = ${PASSLIB} ]]; then
 [[ -z $LIBERADOS ]] && LIBERADOS="${3}" || LIBERADOS="${LIBERADOS} ${3}"
 local bot_retorno+="$LINE\n"
-          bot_retorno+="- - 🔰 ACESSO DE ADMIN LIBERADO 🔰 - - \n"
+          bot_retorno+="- - 🔰 ACCESO DE ADMIN LIBERADO 🔰 - - \n"
           bot_retorno+="$LINE\n"
           bot_retorno+="✌️ Usted ya Puede usar el Bot\n"
           bot_retorno+="👉 Dele Buen Uso\n"

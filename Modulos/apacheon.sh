@@ -15,7 +15,7 @@ MEU_IP2=$(wget -qO- ipv4.icanhazip.com)
 IP="$(fun_ip)"
 msg -bar
 msg -tit
-echo -e "\033[1;96m           Gestor de Archivos FTP VPS•MX"
+echo -e "\033[1;96m           Gestor de Archivos FTP VPS•MX RELOADED"
 msg -bar
 echo -e "${cor[4]} [1] >${cor[3]} $(fun_trans "Colocar Archivo Online")"
 echo -e "${cor[4]} [2] >${cor[3]} $(fun_trans "Remover Archivo Online")"

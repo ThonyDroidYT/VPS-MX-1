@@ -75,7 +75,7 @@ return 0
        while true; do
 	   msg -bar
 	   msg -tit
-	   msg -ama "        INSTALADOR SHADOWSOCKS By @Kalix1"
+	   msg -ama "        INSTALADOR SHADOWSOCKS By @Razhiel"
 	   msg -bar
        echo -e "\033[1;33m $(fun_trans ${id} "Selecione una Criptografia")"
 	   msg -bar
