@@ -9,7 +9,7 @@ SCPidioma="${SCPdir}/idioma"
 SCPusr="${SCPdir}/controlador"
 SCPfrm="${SCPdir}/herramientas"
 SCPinst="${SCPdir}/protocolos"
-kalix1="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FBQUFBRVhRT1N5SXBOMkpaMGVoVVEvVlBTLU1YL21haW4vTW9kdWxvcw=="
+kalix1="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1JhemhpZWwyMDE5L1ZQUy1NWC9tYWluL01vZHVsb3M="
 PUTO='base64 -d'
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 echo "nameserver 8.8.4.4" >> /etc/resolv.conf
@@ -37,11 +37,11 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 }
 ### PAQUETES PRINCIPALES 
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
+msg -ama "     [ VPS - MX RELOADED \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
 msg -bar
 echo -e "\033[97m"
-echo -e "  \033[41m    -- INSTALACION DE PAQUETES PARA VPS-MX --    \e[49m"
-echo -e "  \033[100m     PONER ATENCION  PARA SIGUIENTE PREGUNTA     "
+echo -e "  \033[41m   -- INSTALACION DE PAQUETES Y CONTROLADORES --    \e[49m"
+echo -e "  \033[100m  ☺ PONER ATENCION A LAS SIGUIENTES PREGUNTAS ☺     "
 echo -e "\033[97m"
 msg -bar
 
@@ -146,14 +146,14 @@ service apache2 restart > /dev/null 2>&1
 echo -e "\033[97m    # apt-get install apache2......... $ESTATUS "
 msg -bar2
 
-read -t 20 -n 1 -rsp $'\033[1;39m Preciona Enter Para continuar\n'
+read -t 20 -n 1 -rsp $'\033[1;39m Presiona Enter Para continuar\n'
 clear
 ### FIXEADOR PARA SISTEMAS 86_64
 idfix64_86 () {
 clear
 clear
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
+msg -ama "     [ VPS - MX RELOADED \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
 msg -bar2
 echo ""
 echo -e "\e[91m   INSTALACION SEMI MANUAL DE PAQUETES "
@@ -176,7 +176,7 @@ clear
 clear
 clear
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
+msg -ama "     [ VPS - MX RELOADED \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
 msg -bar2
 echo ""
 echo -e "\e[91mESCOJER PRIMERO #All locales# Y LUEGO #en_US.UTF-8# \e[0m" 
@@ -194,14 +194,14 @@ clear
 clear
 clear
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
+msg -ama "     [ VPS - MX RELOADED \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
 msg -bar2
-echo -e "\033[1;97m  ¿PRECENTO ALGUN ERROR ALGUN PAQUETE ANTERIOR?" 
+echo -e "\033[1;97m  ¿PRESENTARON ERRORES ALGUN PAQUETE ANTERIOR?" 
 msg -bar2
 echo -e "\033[1;32m 1- Escoja:(N) No. Para Instalacion Normal"
 echo -e "\033[1;31m 2- Escoja:(S) Si. Saltaron errores."
 msg -bar2
-echo -e "\033[1;39m Al preciona enter continuara la instalacion Normal"
+echo -e "\033[1;39m Al presionar enter continuara la instalacion Normal"
 msg -bar2
 read -p " [ S | N ]: " idfix64_86   
 [[ "$idfix64_86" = "s" || "$idfix64_86" = "S" ]] && idfix64_86
@@ -253,7 +253,7 @@ pv="$(echo es)"
 byinst="true"
 }
 install_fim () {
-msg -ama "               Finalizando Instalacion" && msg bar2
+msg -ama "               Finalizando Instalacion..." && msg bar2
 #rm -rf /etc/VPS-MX/controlador/nombre.log &>/dev/null
 [[ $(find /etc/VPS-MX/controlador -name nombre.log|grep -w "nombre.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/nombre.log https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/VPS-MX_Oficial/ArchivosUtilitarios/nombre.log &>/dev/null
 [[ $(find /etc/VPS-MX/controlador -name IDT.log|grep -w "IDT.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/IDT.log https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/VPS-MX_Oficial/ArchivosUtilitarios/IDT.log &>/dev/null
@@ -279,6 +279,8 @@ echo 'echo -e "\t\033[91m \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
 echo 'echo -e "\t\033[91m  \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
 echo 'echo -e "\t\033[91m   \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
 echo 'echo -e "\t\033[91m    \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
+echo 'echo -e "\033[92m\t >>>>>>>>>>>>>>>♠♠♠♠♠♠♠♠♠♠♠♠♠♠<<<<<<<<<<<"'>> .bashrc
+echo 'echo -e "\033[92m\t    R  E  L  O  A  D  E  D - By @RAZHIEL"'>> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/VPS-MX/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
@@ -345,9 +347,9 @@ NOTIFY () {
 clear
 clear
 msg -bar
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
+msg -ama "     [ VPS - MX RELOADED \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
 msg -bar
-msg -ama " Notify-BOT (Notificasion Remota)| VPS-MX By @Razhiel "
+msg -ama " Notify-BOT (Notify Remote)| VPS-MX RELOADED By @Razhiel "
 msg -bar
 echo -e "\033[1;94m Notify-BOT es un simple notificador de:"
 echo -e "\033[1;94m >> Usuario Expirado"
@@ -388,7 +390,7 @@ chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/VPS-MX_Oficial/ArchivosUtilitarios/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
+msg -ama "     [ VPS - MX RELOADED \033[1;97m ❌ MOD By @Razhiel ❌\033[1;33m ]"
 msg -ama "  \033[1;96m      🔰Usar Ubuntu 20 a 64 De Preferencia🔰 "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
