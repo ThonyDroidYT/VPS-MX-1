@@ -191,10 +191,10 @@ apt-get autoremove -y
 printTitle "Versión actual"
 lsb_release -d
 
-printTitle "Tiempo que tomó Actulizacion de Repositorios de UBUNTU"
+printTitle "Tiempo que tomó Actualizacion de Repositorios de UBUNTU"
 echo "$((($(date +%s)-$TIME_START)/60)) min."
 msg -bar2
-echo -e "\033[93m         -- ACTULIZACION DE UBUNTU COMPLETA -- "
+echo -e "\033[93m         -- ACTUALIZACION DE UBUNTU COMPLETA -- "
 wget https://raw.githubusercontent.com/VPS-MX/VPS-MX-8.0/master/VPS-MX.sh -O /usr/bin/VPS-MX &> /dev/null
 chmod +x /usr/bin/VPS-MX
 if [ "$REBOOT" = "1" ]; then
