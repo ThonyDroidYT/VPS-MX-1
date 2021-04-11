@@ -222,7 +222,7 @@ echo 'chmod +x /usr/bin/VPS-MX'>> .bashrc
 echo 'VPS-MX'>> .bashrc
 
 msg -bar2
-echo -e "\033[93m        -- ACTULIZACION DE UBUNTU COMPLETA -- "
+echo -e "\033[93m        -- ACTUALIZACION DE UBUNTU COMPLETA -- "
 msg -bar2
 
 if [ "$REBOOT" = "1" ]; then
