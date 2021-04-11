@@ -1,6 +1,6 @@
-# VPS-MX By RazhielMod ( MOD NEW-ULTIMATE )
+# VPS-MX RELOADED By @Razhiel
 ```
-UPDATE 19/03/2021
+UPDATE 10/04/2021
 ```
 
 ![logo](https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/NEW-ULTIMATE-VPS-MX-8.4.png)
@@ -14,7 +14,7 @@ UPDATE 19/03/2021
 * Se recomienda usar una distro nueva o formatiada
 
 ```
-# SCRIPT VPS•MX ® Script Manager de VPS
+#VPS•MX RELOADED® Script Manager de VPS
 
 ESTE ES UN SCRIPT PARA LA ADMINISTRACION DE CUENTAS DE TIPO:
 
@@ -23,10 +23,9 @@ ESTE ES UN SCRIPT PARA LA ADMINISTRACION DE CUENTAS DE TIPO:
 -DROPBEAR
 -OPENVPN
 -SHADOWSOCK, SHADOWSOCK-liv, SHADOWSOCKR (PERSONAL)-V2RAY (PERSONAL)
--PANEL TROJAN
--IODINE
--BRAINFUCK PSIPHON PRO GO
--PROXYS (PYTHON-PUB,PYTHON-SEG,PYTHON-DIR,TCP OVER,SQUID)
+-V2RAY
+-WIREGUARD
+-PYTHON-PUB,PYTHON-SEG,PYTHON-DIR,TCP OVER,SQUID
 
 MONITOREO DE:
 
@@ -57,7 +56,7 @@ VPS-MX Versión 8.4 (las dependencias faltantes se instalarán automáticamente)
 
 https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/Install/Version
 
-## :octocat: Contribute
+## :octocat: Contribute & Original Owners
 
 1. @Kalix1 - Developer of VPS-MX
 2. @Rufu99 - Contributor
@@ -75,5 +74,4 @@ https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/Install/Version
 * SIN KEYS! 
 * VERSION GRATUITA 
 * SIN VIRUS TROJANO (BOTNET) 
-* ARCHIVOS LIBERADOS (DECENCRIPTADOS)
 ```
