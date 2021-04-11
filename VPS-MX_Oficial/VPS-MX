@@ -227,6 +227,7 @@ clear
 msg -bar2
 msg -bar2
 figlet "    -VPS MX-" | lolcat 
+echo 'echo -e "\033[92mt\t ☆☆☆  R  E  L  O  A  D  E  D  ☆☆☆ "'>> .bashrc
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
 pv="$(echo es)"
@@ -255,7 +256,6 @@ echo "exit 0" >> /etc/rc.local
 /bin/cp /etc/skel/.bashrc ~/
 echo 'clear' >> .bashrc
 echo 'echo ""' >> .bashrc
-echo 'echo -e "\t\033[91m __     ______  ____        __  ____  __ " '>> .bashrc
 echo 'echo -e "\t\033[91m __     ______  ____        __  ____  __ " '>> .bashrc
 echo 'echo -e "\t\033[91m \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
 echo 'echo -e "\t\033[91m  \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
