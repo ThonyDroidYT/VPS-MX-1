@@ -258,7 +258,6 @@ echo "exit 0" >> /etc/rc.local
 echo 'clear' >> .bashrc
 echo 'echo ""' >> .bashrc
 echo 'echo -e "\t\033[91m __     ______  ____        __  ____  __ " '>> .bashrc
-echo 'echo -e "\t\033[91m __     ______  ____        __  ____  __ " '>> .bashrc
 echo 'echo -e "\t\033[91m \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
 echo 'echo -e "\t\033[91m  \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
 echo 'echo -e "\t\033[91m   \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
