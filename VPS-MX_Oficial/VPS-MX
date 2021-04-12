@@ -226,8 +226,8 @@ clear
 clear
 msg -bar2
 msg -bar2
-figlet "    -VPS MX-" | lolcat 
-echo 'echo -e "\033[92mt\t ☆☆☆  R  E  L  O  A  D  E  D  ☆☆☆ "'>> .bashrc
+figlet "  - VPS MX  -" | lolcat 
+figlet "  ☆RELOADED☆" | lolcat
 echo 'echo "" '>> .bashrc
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
