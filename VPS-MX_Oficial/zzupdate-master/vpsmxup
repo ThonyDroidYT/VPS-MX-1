@@ -209,7 +209,7 @@ if [ "$REBOOT" = "1" ]; then
 	reboot
 fi
 
-printTitle "Se procede a Instalar VPS-MX"
+printTitle "Se procede a Instalar VPS-MX RELOADED"
 echo $(date)
 msg -bar2
 sleep 7s
