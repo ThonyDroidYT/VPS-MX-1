@@ -245,8 +245,8 @@ clear
 clear
 msg -bar2
 msg -bar2
-figlet "    -VPS MX-" | lolcat 
-echo 'echo -e "\033[92mt\t ☆☆☆  R  E  L  O  A  D  E  D  ☆☆☆ "'>> .bashrc
+figlet "  - VPS MX  -" | lolcat 
+figlet "  ☆RELOADED☆" | lolcat 
 echo 'echo "" '>> .bashrc
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
@@ -280,7 +280,7 @@ echo 'echo -e "\t\033[91m \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
 echo 'echo -e "\t\033[91m  \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
 echo 'echo -e "\t\033[91m   \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
 echo 'echo -e "\t\033[91m    \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
-echo 'echo -e "\033[92m\t   01010101010101010101010101010101010101"'>> .bashrc
+echo 'echo -e "\033[92m\t 0101010101010101010101010101010"'>> .bashrc
 echo 'echo -e "\033[92m\t    R  E  L  O  A  D  E  D - By @RAZHIEL"'>> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'mess1="$(less /etc/VPS-MX/message.txt)" ' >> .bashrc
