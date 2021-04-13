@@ -3,8 +3,8 @@
 UPDATE 10/04/2021
 ```
 
-![logo](https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/logo.png)
-
+![logo](https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/logo.jpg)
+![logo2] (https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/logo2.jpg)
 **Manager Script**
 
 ## :heavy_exclamation_mark: Requerimientos
@@ -56,7 +56,7 @@ VPS-MX Versión 8.4 (las dependencias faltantes se instalarán automáticamente)
 
 https://raw.githubusercontent.com/Razhiel2019/VPS-MX/main/Install/Version
 
-## :octocat: Contribute & Original Owners
+## :octocat: Contribuidores Originales y Creador.
 
 1. @Kalix1 - Developer of VPS-MX
 2. @Rufu99 - Contributor
