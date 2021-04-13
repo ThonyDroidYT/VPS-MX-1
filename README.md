@@ -5,7 +5,8 @@ UPDATE 10/04/2021
 
 ![logo](https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/logo.jpg)
 ![logo2](https://github.com/Razhiel2019/VPS-MX/blob/main/Imagenes/logo2.jpg)
-**Manager Script**
+
+**M a n a g e r  S c r i p t**
 
 ## :heavy_exclamation_mark: Requerimientos
 
