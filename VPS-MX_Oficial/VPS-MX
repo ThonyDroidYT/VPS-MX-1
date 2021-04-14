@@ -316,12 +316,14 @@ case $1 in
 "Shadowsocks-R.sh")ARQ="${SCPinst}/";; #Instalacao 
 "v2ray.sh")ARQ="${SCPinst}/";; #Instalacao
 "budp.sh")ARQ="${SCPinst}/";; #Instalacao
+"wireguard.sh")ARQ="${SCPinst}/";; #wireguard
 "sockspy.sh"|"PDirect.py"|"PPub.py"|"PPriv.py"|"POpen.py"|"PGet.py")ARQ="${SCPinst}/";; #Instalacao
 *)ARQ="${SCPfrm}/";; #Herramientas
 esac
 mv -f ${SCPinstal}/$1 ${ARQ}/$1
 chmod +x ${ARQ}/$1
 }
+
 
 NOTIFY () {
 clear
